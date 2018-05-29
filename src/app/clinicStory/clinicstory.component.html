@@ -1,7 +1,53 @@
 <section>
-<div id="clinicstory" class="container">
+<div class="container-fluid">
   <form (ngSubmit)="saveValues()">
-     hola
+    <br />
+    <div class="form-row">
+          <div class="col">
+            <span class="input-group-addon">Nombre Mascota</span>
+            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.name" name="name">
+          </div>
+          <div class="col">
+              <span class="input-group-addon">Especie</span>
+              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.specie" name="specie">
+          </div>
+          <div class="col">
+              <span class="input-group-addon">Fecha</span>
+              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.date" name="date">
+          </div>
+          <div class="col">
+              <span class="input-group-addon">Raza</span>
+              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.race" name="race">
+          </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <span class="input-group-addon">Color</span>
+            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.colour" name="colour">
+        </div>
+        <div class="col">
+            <span class="input-group-addon">Genero</span>
+            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.gender" name="gender">
+        </div>
+        <div class="col">
+            <span class="input-group-addon">Fecha de nacimiento</span>
+            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.born_date" name="born_date">
+        </div>
+        <div class="col">
+            <span class="input-group-addon">Edad</span>
+            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.age" name="age">
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        
+    </div>
+
+    <br />
+    <button type="submit" class="btn">Save</button>
+
   </form>
 </div>
 

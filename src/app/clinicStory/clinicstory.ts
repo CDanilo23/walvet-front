@@ -1,4 +1,4 @@
-export interface Clinicstory{
+export class Clinicstory{
     id: number;
     name: string;
     specie: string;

@@ -10,7 +10,7 @@ import { ClinicstoryService } from '../service/clinicstory.service';
 })
 export class ClinicstoryComponent implements OnInit {
 
-  currentClinic: Clinicstory;
+  currentClinic = new Clinicstory();
 
   constructor(private clinicstoryService: ClinicstoryService) { }
 
@@ -18,7 +18,9 @@ export class ClinicstoryComponent implements OnInit {
   }
 
   saveValues(){
-
+      console.log(this.currentClinic.name);
+      console.log(this.currentClinic.specie);
+      console.log(this.currentClinic.date);
   }
 
 }
