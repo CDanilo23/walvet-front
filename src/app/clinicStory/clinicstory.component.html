@@ -2,47 +2,66 @@
 <div class="container-fluid">
   <form (ngSubmit)="saveValues()">
     <br />
-    <div class="form-row">
+    
+    <div class="d-flex justify-content-center">
           <div class="col">
             <span class="input-group-addon">Nombre Mascota</span>
-            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.name" name="name">
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.name" name="name">
           </div>
           <div class="col">
               <span class="input-group-addon">Especie</span>
-              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.specie" name="specie">
+              <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.specie" name="specie">
           </div>
           <div class="col">
               <span class="input-group-addon">Fecha</span>
-              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.date" name="date">
+              <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.date" name="date">
           </div>
           <div class="col">
               <span class="input-group-addon">Raza</span>
-              <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.race" name="race">
+              <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.race" name="race">
           </div>
     </div>
 
-    <div class="form-row">
+    <div class="d-flex justify-content-center">
         <div class="col">
             <span class="input-group-addon">Color</span>
-            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.colour" name="colour">
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.colour" name="colour">
         </div>
         <div class="col">
             <span class="input-group-addon">Genero</span>
-            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.gender" name="gender">
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.gender" name="gender">
         </div>
         <div class="col">
             <span class="input-group-addon">Fecha de nacimiento</span>
-            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.born_date" name="born_date">
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.born_date" name="born_date">
         </div>
         <div class="col">
             <span class="input-group-addon">Edad</span>
-            <input type="text" class="form-control" required minlength="6" required [(ngModel)]="currentClinic.age" name="age">
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.age" name="age">
         </div>
-
     </div>
 
-    <div class="form-row">
-        
+    <div class="d-flex justify-content-start">
+        <div class="col-3">
+            <span class="input-group-addon">Historia</span>
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.story" name="story">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+       
+        <div class="col">
+            <span class="input-group-addon">Propietario</span>
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.owner" name="owner">
+        </div>
+        <div class="col">
+            <span class="input-group-addon">Dirección</span>
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.adress" name="adress">
+        </div>
+        <div class="col">
+            <span class="input-group-addon">Phone</span>
+            <input type="text" class="form-control form-control-sm" required minlength="6" required [(ngModel)]="currentClinic.phone" name="phone">
+        </div>
     </div>
 
     <br />
